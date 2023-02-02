@@ -1,41 +1,58 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Untitled</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="main.js" defer type="text/javascript"></script>
-    </head>
-    <body>
-        <main>
-            <section id="rating" class="rating">
-            <img alt="" src="assets/icon-star.svg"/>
-            <h1>How did we do?</h1>
-            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering</p>
-            <div>
-                <input id="1" name="score" type="radio" value="1"/>
-                <label for="1">1</label>
-                <input id="2" name="score" type="radio" value="2"/>
-                <label for="2">2</label>
-                <input id="3" name="score" type="radio" value="3"/>
-                <label for="3">3</label>
-                <input id="4" name="score" type="radio" value="4"/>
-                <label for="4">4</label>
-                <input id="5" name="score" type="radio" value="5"/>
-                <label for="5">5</label>
-                <input id="btn" type="submit">SUBMIT</input>
-            </div>
-            </section>
-            <section class="thanks" id="thanks">
-                <img alt="" src="assets/illustration-thank-you.svg"/>
-                <p id="selected-value"></p>
-                <h1>Thank you!</h1>
-                <p>We appreciate you taking the time to give a rating. If you ever need more support. don't hesitate to get in touch!</p>
-            </section>
-        </main>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Untitled</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="main.js" defer type="text/javascript"></script>
+  </head>
+  <body>
+    <main>
+      <section id="rating" class="rating">
+        <img alt="" src="assets/icon-star.svg" class="star" />
+        <h1>How did we do?</h1>
+        <p class="paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="radio-group">
+          <input id="1" name="score" type="radio" value="1" />
+          <label class="custom-radio-btn" id="custom-radio-btn" for="1"
+            >1
+          </label>
+            <input id="2" name="score" type="radio" value="2" />
+          <label class="custom-radio-btn" for="2"
+            >2
+          </label>
+            <input id="3" name="score" type="radio" value="3" />
+          <label class="custom-radio-btn" for="3"
+            >3
+          </label>
+            <input id="4" name="score" type="radio" value="4" />
+          <label class="custom-radio-btn" for="4"
+            >4
+          </label>
+            <input id="5" name="score" type="radio" value="5" />
+          <label class="custom-radio-btn" for="5"
+            >5
+          </label>
+          <button id="btn" type="submit">SUBMIT</button>
+        </div>
+      </section>
+      <section class="thanks" id="thanks">
+        <img alt="" src="assets/illustration-thank-you.svg" />
+        <p id="selected-value"></p>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support. don't hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
