@@ -63,8 +63,8 @@ h1 {
 
 .star {
   background: var(--Dark-Blue);
-  min-width: 1.5em;
-  padding: 0.8em;
+  min-width: 1.13em;
+  padding: 1em;
   border-radius: 50%;
 }
 
@@ -75,10 +75,12 @@ h1 {
 }
 button {
   color: var(--White);
+  font-size: 1.1rem;
   padding: 1em 4em;
   border-radius: 50px;
   margin-top: 2em;
   width: 100%;
+  border: none;
 }
 .thanks {
   display: none;
@@ -87,7 +89,6 @@ button {
 .custom-radio-btn {
  width: 25px;
  height: 25px;
- border: 2px solid #444;
  border-radius: 50%;
  padding: 1em;
  background: var(--Dark-Blue);
@@ -95,11 +96,19 @@ button {
  display: flex;
  justify-content: center;
  align-items: center;
+ border: none;
+}
+
+input:hover + .custom-radio-btn {
+  background: var(--Light-Grey);
+  color: var(--White);
 }
 
 input:checked + .custom-radio-btn {
   background: var(--orange);
+  color: var(--White);
 }
+
 
 input {
   display: none;
@@ -118,4 +127,37 @@ button::before {
   height: 100%;
   background: var(--orange);
   z-index: -1;
+}
+
+/* ------------- */
+/* ------------- */
+/* Thaks Section */
+/* ------------- */
+/* ------------- */
+
+.thanks {
+  padding: 2em 0;
+  text-align: center;
+
+}
+.selected-value {
+  display: block;
+  background: var(--Dark-Blue);
+  color: var(--orange);
+  border-radius: 2em;
+  width: fit-content;
+  padding: 0.54em 1.4em;
+  margin: 1.2em auto 0 auto;
+  font-size: 0.87rem;
+}
+
+.thanks-p {
+  color: var(--Medium-Grey);
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+.thanks-h1 {
+  font-size: 2rem;
+  margin: 1em auto 0.3em auto;
 }
