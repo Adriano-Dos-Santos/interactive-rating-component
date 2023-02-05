@@ -10,7 +10,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Links](#links)
 - [My process](#my-process)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 
 ## Overview
 
