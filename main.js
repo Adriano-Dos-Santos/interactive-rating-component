@@ -1,4 +1,5 @@
-document.getElementById("btn").addEventListener("click", function () {
+document.getElementById("btn").addEventListener("click", function (event) {
+  event.preventDefault();
   let rating = document.querySelector('input[name="rating"]:checked');
   if (rating) {
     document.getElementById("selected-value").innerHTML =

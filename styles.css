@@ -105,9 +105,9 @@ input:checked + .custom-radio-btn {
 button {
   color: var(--White);
   font-size: 1.1rem;
-  padding: 0.8em 4em;
+  padding: 0.77em 4em;
   border-radius: 50px;
-  margin-top: 2em;
+  margin-top: 1.9em;
   width: 100%;
   border: none;
   position: relative;
