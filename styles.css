@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 :root {
-  /* Colors */
   --orange: hsl(25, 97%, 53%);
-
   --White: hsl(0, 0%, 100%);
   --Light-Grey: hsl(217, 12%, 63%);
   --Medium-Grey: hsl(216, 12%, 54%);
@@ -27,44 +25,45 @@ textarea,
 select {
   font: inherit;
 }
+/* ------------- */
 
 body {
   background: var(--Very-Dark-Blue);
   color: var(--White);
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   font-size: 15px;
   font-family: "Overpass", sans-serif;
 }
 main {
-  width: 375px;
-  margin: 0 auto;
-  border-radius: 2em;
-  padding: 2em;
+  min-width: 325px;
+  flex-basis: 375px;
+  border-radius: 1.7em;
+  padding: 2em 2.5em;
   background-color: var(--Very-Dark-Blue);
   background-image: radial-gradient(at 210px 100px, var(--Dark-Blue) 15%, var(--Very-Dark-Blue) 100%);
   background-position: 0px 0px;
   background-repeat: no-repeat;
 }
-main, main .rating {
-  outline:1px solid rgba();
-}
 .paragraph {
   font-weight: 400;
   font-size: 1rem;
   color: var(--Light-Grey);
+  line-height: 1.55;
+  margin: 0;
 }
 h1 {
   font-weight: 700;
   font-size: 2rem;
-
+  margin: 0.8em 0 0.4em 0;
 }
 
 .star {
   background: var(--Dark-Blue);
-  min-width: 1.13em;
-  padding: 1em;
+  min-width: 1.2em;
+  padding: 1.2em;
   border-radius: 50%;
 }
 
@@ -72,15 +71,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-button {
-  color: var(--White);
-  font-size: 1.1rem;
-  padding: 1em 4em;
-  border-radius: 50px;
-  margin-top: 2em;
-  width: 100%;
-  border: none;
+  margin: 2em 0 0.25em 0;
 }
 .thanks {
   display: none;
@@ -98,26 +89,34 @@ button {
  align-items: center;
  border: none;
 }
+input {
+  display: none;
+}
 
 input:hover + .custom-radio-btn {
   background: var(--Light-Grey);
   color: var(--White);
+  cursor: pointer;
 }
 
 input:checked + .custom-radio-btn {
   background: var(--orange);
   color: var(--White);
-}
-
-
-input {
-  display: none;
+  cursor: default;
 }
 
 button {
+  color: var(--White);
+  font-size: 1.1rem;
+  padding: 0.8em 4em;
+  border-radius: 50px;
+  margin-top: 2em;
+  width: 100%;
+  border: none;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 }
 button::before {
   content: "";
@@ -128,10 +127,19 @@ button::before {
   background: var(--orange);
   z-index: -1;
 }
+button:hover::before {
+  background: var(--Light-Grey);
+}
+button:active::before {
+  background: var(--White);
+}
+button:active {
+  color: var(--orange);
+}
 
 /* ------------- */
 /* ------------- */
-/* Thaks Section */
+/* Thamks Section */
 /* ------------- */
 /* ------------- */
 
@@ -155,6 +163,7 @@ button::before {
   color: var(--Medium-Grey);
   margin: 0;
   font-size: 1.03rem;
+  line-height: 1.55;
 }
 
 .thanks-h1 {
