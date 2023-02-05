@@ -47,7 +47,7 @@ main {
   background-position: 0px 0px;
   background-repeat: no-repeat;
 }
-.paragraph {
+.rating-description {
   font-weight: 400;
   font-size: 1rem;
   color: var(--Light-Grey);
@@ -67,14 +67,11 @@ h1 {
   border-radius: 50%;
 }
 
-.radio-group {
+.rating-options {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2em 0 0.25em 0;
-}
-.thanks {
-  display: none;
 }
 
 .custom-radio-btn {
@@ -143,7 +140,8 @@ button:active {
 /* ------------- */
 /* ------------- */
 
-.thanks {
+.thank-you-section {
+  display: none;
   padding: 2em 0;
   text-align: center;
 
@@ -159,14 +157,14 @@ button:active {
   font-size: 0.87rem;
 }
 
-.thanks-p {
+.thank-you-description {
   color: var(--Medium-Grey);
   margin: 0;
   font-size: 1.03rem;
   line-height: 1.55;
 }
 
-.thanks-h1 {
+.thank-you-title {
   font-size: 2rem;
   margin: 1em auto 0.3em auto;
 }
